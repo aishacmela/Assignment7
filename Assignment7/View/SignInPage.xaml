@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Assignment7.View.SignInPage"
+             
+             BackgroundColor="White">
+
+
+
+    <Grid RowDefinitions="Auto,*,Auto" Padding="0,20" BackgroundColor="White">
+
+        <!-- Top Section with Greeting -->
+        <VerticalStackLayout Grid.Row="0" 
+                             HorizontalOptions="Center" 
+                             Padding="0,10">
+            <Label Text="hello" 
+                   FontSize="50" 
+                   FontAttributes="Bold" 
+                   TextColor="Red" 
+                   VerticalOptions="Center" 
+                   HorizontalOptions="Center" />
+            <Label Text="Welcom Ayishah" 
+                   FontSize="22" 
+                   TextColor="Black" 
+                   FontAttributes="Bold" />
+        </VerticalStackLayout>
+
+        <!-- Middle Section with Functional Buttons -->
+        <VerticalStackLayout Grid.Row="1" Padding="20" Spacing="15">
+            <Grid ColumnDefinitions="*,*" 
+                  RowDefinitions="Auto,Auto,Auto" 
+                  ColumnSpacing="15" 
+                  RowSpacing="15">
+                <VerticalStackLayout Grid.Row="0" 
+                                     Grid.Column="0" 
+                                     BackgroundColor="#F0F8FF" 
+                                     Padding="10" >
+                    <Image Source="electricity.png"
+                           WidthRequest="50" 
+                           HeightRequest="50" />
+                    <Label Text="Buy electricity" 
+                           HorizontalOptions="Center" />
+                </VerticalStackLayout>
+                <VerticalStackLayout Grid.Row="0" 
+                                     Grid.Column="1" 
+                                     BackgroundColor="#F0F8FF" 
+                                     Padding="10" >
+                    <Image Source="people.png" 
+                           WidthRequest="50" 
+                           HeightRequest="50" />
+                    <Label Text="Pay beneficiary" 
+                           HorizontalOptions="Center" />
+                </VerticalStackLayout>
+                <VerticalStackLayout Grid.Row="1" 
+                                     Grid.Column="0" 
+                                     BackgroundColor="#F0F8FF" 
+                                     Padding="10" >
+                    <Image Source="transfer.png" 
+                           WidthRequest="50" 
+                           HeightRequest="50" />
+                    <Label Text="Transfer money" 
+                           HorizontalOptions="Center" />
+                </VerticalStackLayout>
+                <VerticalStackLayout Grid.Row="1" 
+                                     Grid.Column="1" 
+                                     BackgroundColor="#F0F8FF" 
+                                     Padding="10" >
+                    <Image Source="points.png" 
+                           WidthRequest="50" 
+                           HeightRequest="50" />
+                    <Label Text="Track money" 
+                           HorizontalOptions="Center" />
+                </VerticalStackLayout>
+                <VerticalStackLayout Grid.Row="2"
+                                     Grid.ColumnSpan="2" 
+                                     BackgroundColor="#F0F8FF" 
+                                     Padding="10" >
+                    <Image Source="payshap.png" 
+                           WidthRequest="50" 
+                           HeightRequest="50" />
+                    <Label Text="PayShap" 
+                           HorizontalOptions="Center" />
+                </VerticalStackLayout>
+            </Grid>
+
+            <Button x:Name="SignInButton"
+                    Text="Sign In" 
+                    BackgroundColor="#0066CC" 
+                    TextColor="White" 
+                    FontSize="18"
+                    CornerRadius="30" 
+                    ImageSource="sign_in_icon.png"
+                    Clicked="OnSignInButtonClicked"/>
+        </VerticalStackLayout>
+
+        <!-- Bottom Section for QR Scan -->
+        <Grid Grid.Row="2" VerticalOptions="End" Padding="5">
+            <Frame BorderColor="#D3D3D3" 
+                   CornerRadius="50" 
+                   Padding="10" 
+                   HorizontalOptions="Center" 
+                   WidthRequest="80"
+                   HeightRequest="80" >
+                <VerticalStackLayout HorizontalOptions="Center">
+                    <Image Source="qrcode.png" 
+                           WidthRequest="50" 
+                           HeightRequest="50" />
+                    
+                </VerticalStackLayout>
+            </Frame>
+            <Label Text="Scan to pay" 
+                   HorizontalOptions="Center" 
+                   TextColor="#019BE5"
+                   Margin="0,100,0,0"
+                   FontAttributes="Bold" />
+        </Grid>
+    </Grid>
+
+</ContentPage>

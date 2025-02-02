@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="Assignment7.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:Assignment7.View"
+    FlyoutBehavior="Disabled"
+   
+    Title="Assignment7">
+
+   
+
+    <TabBar>
+        <Tab Icon="home.png" Title="Home">
+            <ShellContent
+                ContentTemplate="{DataTemplate local:HomePage}"
+             />
+        </Tab>
+        <Tab Icon="creditcard.png" Title="Cards">
+            <ShellContent ContentTemplate="{DataTemplate local:HomePage }"></ShellContent>
+        </Tab>
+        <Tab Icon="transfer.png" Title="Transact">
+                    <ShellContent
+   
+    ContentTemplate="{DataTemplate local:HomePage}"
+    />
+                </Tab>
+        <Tab Icon="message.png" Title="Messages">
+                    <ShellContent
+    
+    ContentTemplate="{DataTemplate local:HomePage}"
+     />
+                </Tab>
+        <Tab Icon="explore.png" Title="Explore">
+                    <ShellContent
+   
+    ContentTemplate="{DataTemplate local:HomePage}"
+    />
+                </Tab>
+    </TabBar>
+
+</Shell>

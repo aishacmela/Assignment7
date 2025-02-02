@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Assignment7.View.HomePage"
+               
+             >
+    <VerticalStackLayout>
+
+        <!-- HEADER -->
+        <Grid BackgroundColor="#0094E0" Padding="10" HeightRequest="80">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <Image Source="profile_icon.png" WidthRequest="40" HeightRequest="40" Grid.Column="0"/>
+            <Label Text="GlobalOne" FontSize="24" FontAttributes="Bold" TextColor="White" Grid.Column="1" VerticalOptions="Center" HorizontalOptions="Center"/>
+        </Grid>
+
+        <!-- Main Content -->
+        <ScrollView>
+            <VerticalStackLayout Padding="10">
+
+                <!-- Account Section -->
+                <Frame BackgroundColor="White" CornerRadius="10" Padding="10">
+                    <HorizontalStackLayout>
+                        <Image Source="profileuser.png" WidthRequest="40" HeightRequest="40"/>
+                        <VerticalStackLayout>
+                            <Label Text="Main Account" FontSize="18" FontAttributes="Bold" TextColor="Black"/>
+                        </VerticalStackLayout>
+                    </HorizontalStackLayout>
+                </Frame>
+
+                <Frame BackgroundColor="White" CornerRadius="10" Padding="10">
+                    <HorizontalStackLayout>
+                        <Image Source="savingsplans.png" WidthRequest="40" HeightRequest="40"/>
+                        <VerticalStackLayout>
+                            <Label Text="Savings Plans" FontSize="18" FontAttributes="Bold" TextColor="Black"/>
+                        </VerticalStackLayout>
+                    </HorizontalStackLayout>
+                </Frame>
+
+                <Frame BackgroundColor="White" CornerRadius="10" Padding="10">
+                    <HorizontalStackLayout>
+                        <Image Source="insurance.png" WidthRequest="40" HeightRequest="40"/>
+                        <VerticalStackLayout>
+                            <Label Text="Insure" FontSize="18" FontAttributes="Bold" TextColor="Black"/>
+                            <Label Text="Cover for you and your family" FontSize="14" TextColor="Gray"/>
+                        </VerticalStackLayout>
+                    </HorizontalStackLayout>
+                </Frame>
+
+                <!-- Live Better Section -->
+                <Label Text="Live Better" FontSize="18" FontAttributes="Bold" Margin="0,10,0,5"/>
+                <Frame BackgroundColor="White" CornerRadius="10" Padding="10">
+                    <HorizontalStackLayout>
+                        <Image Source="livebetter.png" WidthRequest="40" HeightRequest="40"/>
+                        <Label Text="Live Better" FontSize="18" FontAttributes="Bold" TextColor="Black"/>
+                    </HorizontalStackLayout>
+                </Frame>
+
+                <!-- Favorites Section -->
+                <HorizontalStackLayout>
+                    <Label Text="Favourites" FontSize="18" FontAttributes="Bold"/>
+                    <Label Text="Edit" FontSize="16" TextColor="Blue" HorizontalOptions="EndAndExpand"/>
+                </HorizontalStackLayout>
+
+                <Grid ColumnSpacing="10" RowSpacing="10">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <Frame BackgroundColor="White" CornerRadius="10" Padding="10" Grid.Row="0" Grid.Column="0">
+                        <VerticalStackLayout>
+                            <Image Source="electricity.png" WidthRequest="30" HeightRequest="30"/>
+                            <Label Text="Buy electricity" FontSize="14" TextColor="Black"/>
+                        </VerticalStackLayout>
+                    </Frame>
+
+                    <Frame BackgroundColor="White" CornerRadius="10" Padding="10" Grid.Row="0" Grid.Column="1">
+                        <VerticalStackLayout>
+                            <Image Source="people.png" WidthRequest="30" HeightRequest="30"/>
+                            <Label Text="Pay beneficiary" FontSize="14" TextColor="Black"/>
+                        </VerticalStackLayout>
+                    </Frame>
+
+                    <Frame BackgroundColor="White" CornerRadius="10" Padding="10" Grid.Row="1" Grid.Column="0">
+                        <VerticalStackLayout>
+                            <Image Source="transfer.png" WidthRequest="30" HeightRequest="30"/>
+                            <Label Text="Transfer money" FontSize="14" TextColor="Black"/>
+                        </VerticalStackLayout>
+                    </Frame>
+
+                    <Frame BackgroundColor="White" CornerRadius="10" Padding="10" Grid.Row="1" Grid.Column="1">
+                        <VerticalStackLayout>
+                            <Image Source="points.png" WidthRequest="30" HeightRequest="30"/>
+                            <Label Text="Track money" FontSize="14" TextColor="Black"/>
+                        </VerticalStackLayout>
+                    </Frame>
+                </Grid>
+
+            </VerticalStackLayout>
+        </ScrollView>
+
+        <!-- Bottom Navigation -->
+        <Grid BackgroundColor="White" Padding="10" HeightRequest="70">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+           <!--<VerticalStackLayout Grid.Column="0" HorizontalOptions="Center">
+                <Image Source="home.png" WidthRequest="30" HeightRequest="30"/>
+                <Label Text="Home" FontSize="12" TextColor="Blue"/>
+            </VerticalStackLayout>
+
+            <VerticalStackLayout Grid.Column="1" HorizontalOptions="Center">
+                <Image Source="creditcard.png" WidthRequest="30" HeightRequest="30"/>
+                <Label Text="Cards" FontSize="12" TextColor="Gray"/>
+            </VerticalStackLayout>
+
+            <VerticalStackLayout Grid.Column="2" HorizontalOptions="Center">
+                <Frame BackgroundColor="White" CornerRadius="20" Padding="5">
+                    <Image Source="transfer.png" WidthRequest="30" HeightRequest="30"/>
+                </Frame>
+                <Label Text="Transact" FontSize="12" TextColor="Gray"/>
+            </VerticalStackLayout>
+
+            <VerticalStackLayout Grid.Column="3" HorizontalOptions="Center">
+                <Image Source="message.png" WidthRequest="30" HeightRequest="30"/>
+                <Label Text="Messages" FontSize="12" TextColor="Gray"/>
+            </VerticalStackLayout>
+
+            <VerticalStackLayout Grid.Column="4" HorizontalOptions="Center">
+                <Image Source="explore.png" WidthRequest="30" HeightRequest="30"/>
+                <Label Text="Explore" FontSize="12" TextColor="Gray"/>
+            </VerticalStackLayout>-->
+
+        </Grid>
+
+    </VerticalStackLayout>
+
+</ContentPage>
