@@ -8,22 +8,26 @@
    
     Title="Assignment7">
 
-   
 
-    <TabBar>
+    <ShellContent Route="SignIn"
+                  ContentTemplate="{DataTemplate local:SignInPage}"
+                  Shell.NavBarIsVisible="False" />
+    
+
+    <TabBar Route="HomePage">
         <Tab Icon="home.png" Title="Home">
             <ShellContent
                 ContentTemplate="{DataTemplate local:HomePage}"
              />
         </Tab>
         <Tab Icon="creditcard.png" Title="Cards">
-            <ShellContent ContentTemplate="{DataTemplate local:HomePage }"></ShellContent>
+            <ShellContent ContentTemplate="{DataTemplate local:HomePage }"/>
         </Tab>
         <Tab Icon="transfer.png" Title="Transact">
                     <ShellContent
    
-    ContentTemplate="{DataTemplate local:HomePage}"
-    />
+    ContentTemplate="{DataTemplate local:HomePage }"
+                         />
                 </Tab>
         <Tab Icon="message.png" Title="Messages">
                     <ShellContent

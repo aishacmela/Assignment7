@@ -12,6 +12,6 @@ public partial class SignInPage : ContentPage
 
 	private async void OnSignInButtonClicked(object sender, EventArgs e)
 	{
-		await Shell.Current.GoToAsync("HomePage");
+		await Shell.Current.GoToAsync("///HomePage");
 	}
 }

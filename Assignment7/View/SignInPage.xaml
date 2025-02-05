@@ -9,7 +9,7 @@
 
     <Grid RowDefinitions="Auto,*,Auto" Padding="0,20" BackgroundColor="White">
 
-        <!-- Top Section with Greeting -->
+        <!-- Top Section  -->
         <VerticalStackLayout Grid.Row="0" 
                              HorizontalOptions="Center" 
                              Padding="0,10">
@@ -19,13 +19,13 @@
                    TextColor="Red" 
                    VerticalOptions="Center" 
                    HorizontalOptions="Center" />
-            <Label Text="Welcom Ayishah" 
+            <Label Text="Welcome Ayishah" 
                    FontSize="22" 
                    TextColor="Black" 
                    FontAttributes="Bold" />
         </VerticalStackLayout>
 
-        <!-- Middle Section with Functional Buttons -->
+        <!-- Middle Section  -->
         <VerticalStackLayout Grid.Row="1" Padding="20" Spacing="15">
             <Grid ColumnDefinitions="*,*" 
                   RowDefinitions="Auto,Auto,Auto" 
@@ -92,7 +92,6 @@
                     ImageSource="sign_in_icon.png"
                     Clicked="OnSignInButtonClicked"/>
         </VerticalStackLayout>
-
         <!-- Bottom Section for QR Scan -->
         <Grid Grid.Row="2" VerticalOptions="End" Padding="5">
             <Frame BorderColor="#D3D3D3" 
@@ -105,7 +104,7 @@
                     <Image Source="qrcode.png" 
                            WidthRequest="50" 
                            HeightRequest="50" />
-                    
+
                 </VerticalStackLayout>
             </Frame>
             <Label Text="Scan to pay" 
@@ -115,5 +114,4 @@
                    FontAttributes="Bold" />
         </Grid>
     </Grid>
-
 </ContentPage>

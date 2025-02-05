@@ -8,7 +8,7 @@ namespace Assignment7
         {
             InitializeComponent();
 
-            Routing.RegisterRoute("SignInPage", typeof(SignInPage));
+            Routing.RegisterRoute("SignIn", typeof(SignInPage));
             Routing.RegisterRoute("HomePage", typeof(HomePage));
         }
     }
